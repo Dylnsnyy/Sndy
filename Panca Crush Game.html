@@ -8,11 +8,11 @@
     <title>Panca Crush Game</title>
     <style>
 
-      @media screen and (max-width: 500px) {
+      @media screen and (max-width: 768px) {
       /* Aturan CSS khusus untuk layar dengan lebar maksimum 768px (misalnya perangkat seluler) */
       #game-container {
-          max-width: 100%;
-          margin: 20px; /* Margin agar game container tidak terlalu dekat dengan tepi layar */
+          max-width: 100%; /* Lebar maksimum game container */
+          margin: 10px; /* Margin agar game container tidak terlalu dekat dengan tepi layar */
         }
       
       .cell {
@@ -45,7 +45,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(6, 0, 0, 0.775); /* Warna latar belakang loading screen */
+        background-color: rgba(6, 0, 0, 0.755); /* Warna latar belakang loading screen */
         z-index: 9999; /* Pastikan loading screen muncul di atas konten lain */
       }
 
@@ -83,8 +83,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: calc(90%); /* Hitung padding (20px + 20px) ke dalam ukuran maksimum */
-        overflow: hidden; /* Tambahkan overflow */
+        width: 700px;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -101,7 +100,7 @@
         grid-template-columns: repeat(7, 12%);
         gap: 14px;
         position: relative; /* Added for explosion animation */
-        width: 90%;
+        max-width: 90%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
@@ -411,7 +410,7 @@
      
       <select id="music-selection">
         <optgroup label="Opsi 1">
-          <option value="music/Backsound 1.mp3">Candy Crush-Backsound</option>
+          <option value="music/Backsound .mp3">Candy Crush-Backsound</option>
           <option value="music/Backsound 2.mp3">Harvest moon-Town theme</option>
           <option value="music/Backsound 3.mp3">Stumbel guys-Backsound</option>
           <option value="music/Backsound 4.mp3">Children's Advanture-Soundtrack Pou</option>
