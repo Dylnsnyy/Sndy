@@ -16,8 +16,8 @@
         }
       
       .cell {
-          width: 8%; /* Lebar sel */
-          height: auto; /* Tinggi sel */
+          width: 0px; /* Lebar sel */
+          height: 0px; /* Tinggi sel */
           font-size: 3vw; /* Ukuran font responsif */
         }
       }
@@ -83,7 +83,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 700px;
         margin: 0 auto;
         padding-left: 20px;
         padding-right: 20px;
@@ -100,13 +99,13 @@
         grid-template-columns: repeat(7, 12%);
         gap: 14px;
         position: relative; /* Added for explosion animation */
-        max-width: 90%;
         align-items: center;
         justify-content: center;
         margin: 0 auto;
       }
 
       .cell {
+        max-width: 100%;
         width: 60px;
         height: 60px;
         padding: 10px; /* Untuk membuat sel menjadi kotak */
