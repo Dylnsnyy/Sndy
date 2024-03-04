@@ -16,8 +16,8 @@
         }
       
       .cell {
-          width: 10%; /* Lebar sel */
-          height: 10%; /* Tinggi sel */
+          width: 0%; /* Lebar sel */
+          height: 0%; /* Tinggi sel */
           font-size: 3vw; /* Ukuran font responsif */
         }
       }
@@ -73,18 +73,12 @@
       }
 
       #game-container {
-        text-align: center;
-        display: none;
-      }
-      
-      #game-container {
         background: linear-gradient(#0088ff 0%, #fbc8c8 100%);
         border-radius: 40px;
+        padding: 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        max-width: 90%;
-        position: center;
       }
 
       .fade-out {
@@ -96,9 +90,6 @@
         grid-template-columns: repeat(7, 12%);
         gap: 14px;
         position: relative; /* Added for explosion animation */
-        max-width: 90%;
-        align-items: center;
-        justify-content: center;
       }
 
       .cell {
